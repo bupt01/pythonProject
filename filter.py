@@ -5,7 +5,7 @@ import shutil
 
 from pathlib import Path
 
-from main import list_direct_subdirectories
+from main1 import list_direct_subdirectories
 
 
 class JavaCommentFilter:
@@ -79,7 +79,6 @@ class JavaProjectCleaner:
                                 print(f"Unable to copy file. {e}")
                         with open(file_path, 'w') as file:
                             file.write(clean_code)
-
 
 # 使用示例
 if __name__ == "__main__":
